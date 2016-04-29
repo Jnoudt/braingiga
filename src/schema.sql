@@ -65,3 +65,20 @@ create table solutions
   ( time TIMESTAMP
   , file MEDIUMBLOB
   );
+
+  -- for contact page
+drop table if exists contact;
+create table contact
+  (  Your_Name       char(30)
+  ,  Contact_Number  int(14)
+  ,  Your_Email      char(30)
+  ,  Subject         char(30)
+  ,  Your_Message    text
+  );
+
+  -- for login page
+drop table if exists login;
+create table login
+  ( email char(30)
+  , password char(20)
+  );
